@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="c0_core_numbers">
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="c1_core_numbers">
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="c2_core_numbers">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="c0_avail_freqs">
+        <item>2000</item>
+        <item>1800</item>
+        <item>1725</item>
+        <item>1625</item>
+        <item>1525</item>
+        <item>1450</item>
+        <item>1350</item>
+        <item>1250</item>
+        <item>1075</item>
+        <item>1000</item>
+        <item>925</item>
+        <item>850</item>
+        <item>750</item>
+        <item>675</item>
+        <item>600</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="c1_avail_freqs">
+        <item>2600</item>
+        <item>2507</item>
+        <item>2354</item>
+        <item>2200</item>
+        <item>1985</item>
+        <item>1855</item>
+        <item>1740</item>
+        <item>1624</item>
+        <item>1537</item>
+        <item>1451</item>
+        <item>1335</item>
+        <item>1162</item>
+        <item>1046</item>
+        <item>902</item>
+        <item>700</item>
+    </string-array>
+    <string-array name="c2_avail_freqs">
+        <item>3000</item>
+        <item>2892</item>
+        <item>2713</item>
+        <item>2600</item>
+        <item>2463</item>
+        <item>2284</item>
+        <item>2141</item>
+        <item>1998</item>
+        <item>1820</item>
+        <item>1632</item>
+        <item>1482</item>
+        <item>1370</item>
+        <item>1258</item>
+        <item>1108</item>
+        <item>921</item>
+        <item>659</item>
+    </string-array>
+</resources>

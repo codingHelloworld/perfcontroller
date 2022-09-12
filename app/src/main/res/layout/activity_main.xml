@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/c0CoreLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Switch
+            android:id="@+id/c0CoreMaxNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/c0_max_core"
+            android:layout_weight="3"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Spinner
+            android:id="@+id/c0CoreNums"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:entries="@array/c0_core_numbers" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/c1CoreLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c0CoreLimit">
+
+        <Switch
+            android:id="@+id/c1CoreMaxNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/c1_max_core"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Spinner
+            android:id="@+id/c1CoreNums"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:entries="@array/c1_core_numbers" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/c2CoreLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c1CoreLimit">
+
+        <Switch
+            android:id="@+id/c2CoreMaxNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/c2_max_core"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Spinner
+            android:id="@+id/c2CoreNums"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:entries="@array/c2_core_numbers"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/c0FreqLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/c2CoreLimit"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Switch
+            android:id="@+id/c0MaxFreq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/c0_max_freq"
+            android:layout_weight="3"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Spinner
+            android:id="@+id/c0Freqs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:entries="@array/c0_avail_freqs" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/c1FreqLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/c0FreqLimit"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Switch
+            android:id="@+id/c1MaxFreq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/c1_max_freq"
+            android:layout_weight="3"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Spinner
+            android:id="@+id/c1Freqs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:entries="@array/c1_avail_freqs" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/c2FreqLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/c1FreqLimit"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Switch
+            android:id="@+id/c2MaxFreq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/c2_max_freq"
+            android:layout_weight="3"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Spinner
+            android:id="@+id/c2Freqs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:entries="@array/c2_avail_freqs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fgUtilMaxLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c2FreqLimit">
+
+        <Switch
+            android:id="@+id/fgUtilSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/fg_util_max_limit"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+        <EditText
+            android:id="@+id/fgUtilMax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/pct"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/fgUtilSbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="10dp"
+        android:min="0"
+        android:max="100"
+        android:progress="100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fgUtilMaxLimit"
+        />
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/stopBtn"
+        app:layout_constraintTop_toBottomOf="@+id/fgUtilSbar" />
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/startBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fgUtilSbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Perf Controller</string>
+    <string name="c0_max_core">C0 Max Core</string>
+    <string name="c0_core_numers">C0 core numers</string>
+    <string name="c1_max_core">C1 Max Core</string>
+    <string name="c1_core_numers">C1 core numbers</string>
+    <string name="c2_max_core">C2 Max Core</string>
+    <string name="c2_core_numers">C2 core numbers</string>
+    <string name="c0_max_freq">C0 Max Freq(MHz)</string>
+    <string name="c1_max_freq">C1 Max Freq(MHz)</string>
+    <string name="c2_max_freq">C2 Max Freq(MHz)</string>
+    <string name="c0_avail_freqs">C0 Avail Freqs</string>
+    <string name="c1_avail_freqs">C1 Avail Freqs</string>
+    <string name="c2_avail_freqs">C2 Avail Freqs</string>
+    <string name="fg_util_max_limit">FG Util Max Limit</string>
+    <string name="pct">100%</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+</resources>
